@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        .container{
+            width: 30%;
+            
+            margin: auto;
+            text-align: center;
+            /*border: 2px solid black;*/
+            transform: translateY(100%);
+            background: linear-gradient(to right,lightblue 30%,darkblue );
+            padding-top: 30px;
+            border-radius: 10px;
+            padding-bottom: 30px;
+           
+        }
+        #timeshow{
+            width: 70%;
+            margin:auto ;
+            /*border: 2px solid black;*/
+            background-color: #7c7575;
+            padding: 20px;
+            margin-bottom:50px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 25px black;
+            color: white;
+        }
+        #button{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        .buttons{
+            padding: 10px 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div id="timeshow">00 : 00 : 00 : 000</div>
+        <div id="button">
+            <button id="start" class="buttons">Start</button>
+            <button id="Pause" class="buttons">Pause</button>
+            <button id="Reset" class="buttons">Reset</button>
+        </div>
+
+    </div>
+    <script src="stopwatch.js"></script>
+    
+</body>
+</html>
